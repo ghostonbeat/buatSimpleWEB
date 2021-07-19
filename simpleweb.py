@@ -5,7 +5,7 @@ from shutil import *
 path = getcwd()
 folder = ['/proyekweb', '/proyekweb/component', '/proyekweb/content']
 file =  [folder[0]+'/index.php', folder[1]+'/Header.html', folder[1]+'/Footer.html', folder[2]+'/style.scss', folder[2]+'/javascript.js']
-pohon = 'tree '+path+folder[0]
+pohon = path+folder[0]
 
 def buatFolder():
     for i in range(len(folder)):
@@ -22,7 +22,7 @@ def main():
     buatFolder()
     buatKomponen()
     try:
-        system(pohon)
+        walk(pohon)
     except:
         print("Mohon maaf, anda belum memiliki program 'Tree'")
         print("Silahkan install dulu program 'Tree' pada Linux OS anda!")
