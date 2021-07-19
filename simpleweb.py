@@ -23,9 +23,6 @@ def pohon():
     for root in os.walk(akar):  
         akr.append(root)
 
-    for i in range(len(akr)):
-        print(akr[i])
-
     print(" "+folder[0])
     for i in range(len(akr[0][1])):
         print("|")
