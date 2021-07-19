@@ -21,7 +21,14 @@ def hapusLama():
 def main():
     buatFolder()
     buatKomponen()
-    system(pohon)
+    try:
+        system(pohon)
+    except:
+        print("Mohon maaf, anda belum memiliki program 'Tree'")
+        print("Silahkan install dulu program 'Tree' pada Linux OS anda!")
+        print("Ubuntu/Debian -> sudo apt install tree")
+        print("Fedora/Red Hat -> sudo dnf install tree")
+        print("Arch Linux -> sudo pacman -S tree")
     """Catatan : Pastikan sistem Linux Distro memiliki program Tree"""
     print("paket proyek berhasil dibuat!! selamat mengerjakan!!")
 
