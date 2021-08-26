@@ -4,7 +4,7 @@ import shutil
 
 path = './'
 folder = ['proyekweb', 'proyekweb/component', 'proyekweb/content']
-bahan =  [folder[0]+'/index.php', folder[0]+'/test.html', folder[1]+'/Header.html', folder[1]+'/Footer.html', folder[2]+'/style.scss', folder[2]+'/javascript.js']
+bahan =  [folder[0]+'/index.php', folder[1]+'/style.scss', folder[1]+'/javascript.js', folder[2]+'/Header.html', folder[2]+'/Footer.html', folder[2]+'/Main.php']
 akar = path+folder[0]
 
 def buatFolder():
